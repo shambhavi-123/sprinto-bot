@@ -11,7 +11,7 @@ import { AddressModel } from '../models/address'
 //     const addresses = await AddressModel.findAll({ where: { UserId: req.body.UserId } })
 //     res.status(200).json({ status: 'success', data: addresses })
 //   }
-}
+// }
 
 module.exports.getAddressById = function getAddressById () {
   return async (req: Request, res: Response) => {
