@@ -18,7 +18,7 @@
             <mat-cell *matCellDef="let element" fxFlex="50%"> {{element.orderId }}</mat-cell>
           </ng-container>
 
-          <ng-container matColumnDef="Price">
+          <!-- <ng-container matColumnDef="Price">
             <mat-header-cell *matHeaderCellDef translate="LABEL_PRICE" fxFlex="15%"></mat-header-cell>
             <mat-cell *matCellDef="let element" fxFlex="15%"> {{element.totalPrice?.toFixed(2) }}&curren;</mat-cell>
           </ng-container>
@@ -29,7 +29,7 @@
               <div *ngIf="!element.delivered" class="error" translate>LABEL_IN_TRANSIT</div>
               <div *ngIf="element.delivered" class="confirmation" translate>LABEL_DELIVERED</div>
             </mat-cell>
-          </ng-container>
+          </ng-container> -->
 
           <ng-container matColumnDef="StatusButton">
             <mat-header-cell *matHeaderCellDef fxFlex="15%"></mat-header-cell>
