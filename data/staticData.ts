@@ -2,7 +2,7 @@ import path from 'path'
 import { readFile } from 'fs/promises'
 import { safeLoad } from 'js-yaml'
 import logger from '../lib/logger'
-
+//change
 //resolve errors
 export async function loadStaticData (file: string) {
   const filePath = path.resolve('./data/static/' + file + '.yml')
