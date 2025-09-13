@@ -18,6 +18,7 @@
     ]
   },
   "include" : [
+    "abc",
     "cypress/**/*.ts",
     "data/**/*.ts",
     "lib/**/*.ts",
