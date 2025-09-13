@@ -12,13 +12,13 @@
         <div class="heading">
           <span translate>TITLE_TRACK_ORDERS</span>
         </div>
-        <mat-table [dataSource]="orderSource">
+        <!-- <mat-table [dataSource]="orderSource">
           <ng-container matColumnDef="OrderId">
             <mat-header-cell *matHeaderCellDef translate="LABEL_ORDER_ID" fxFlex="50%"></mat-header-cell>
             <mat-cell *matCellDef="let element" fxFlex="50%"> {{element.orderId }}</mat-cell>
-          </ng-container>
+          </ng-container> -->
 
-          <ng-container matColumnDef="Price">
+          <!-- <ng-container matColumnDef="Price">
             <mat-header-cell *matHeaderCellDef translate="LABEL_PRICE" fxFlex="15%"></mat-header-cell>
             <mat-cell *matCellDef="let element" fxFlex="15%"> {{element.totalPrice?.toFixed(2) }}&curren;</mat-cell>
           </ng-container>
@@ -29,9 +29,9 @@
               <div *ngIf="!element.delivered" class="error" translate>LABEL_IN_TRANSIT</div>
               <div *ngIf="element.delivered" class="confirmation" translate>LABEL_DELIVERED</div>
             </mat-cell>
-          </ng-container>
+          </ng-container> -->
 
-          <ng-container matColumnDef="StatusButton">
+          <!-- <ng-container matColumnDef="StatusButton">
             <mat-header-cell *matHeaderCellDef fxFlex="15%"></mat-header-cell>
             <mat-cell *matCellDef="let element" fxFlex="15%">
               <button *ngIf="element.delivered" mat-icon-button aria-label="Print order confirmation"
@@ -49,7 +49,7 @@
                 </mat-icon>
               </button>
             </mat-cell>
-          </ng-container>
+          </ng-container> -->
 
           <mat-header-row *matHeaderRowDef="orderHistoryColumns"></mat-header-row>
           <mat-row *matRowDef="let row; columns: orderHistoryColumns;"></mat-row>
